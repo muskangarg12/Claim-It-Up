@@ -25,8 +25,6 @@ We have improved upon the accuracy of the verification by taking the probability
 We calculate the count of every wrong character and compare it to get the best results and accordingly with respect to a threshold value set, provide the results of matching data.
 
 ## Future aspects
-• Add Government validation using VAHAN api.
-• Implementing payment gateway using Blockchain
-technology.
-• Working with large set of data instead of single dataset
-having limited data to improve the accuracy of the model.
+1. Add Government validation using VAHAN api.
+2. Implementing payment gateway using Blockchain technology.
+3. Working with large set of data instead of single dataset having limited data to improve the accuracy of the model.
