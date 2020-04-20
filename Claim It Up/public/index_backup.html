@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel='shortcut icon' type='image/x-icon' href='img/car_icon.png' />
+  <title>Claim It Up</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <!-- <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>Claim It Up</span></a></h1>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">Input</a></li>
+          <li><a href="#features">Ocr Result</a></li>
+          <li><a href="#portfolio">Structured Output</a></li>
+          <li><a href="#faq">Live demo</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2>Claim It Up!</span></h2>
+          <div>
+            <a href="#footer" class="btn-get-started scrollto">Live Demo!</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="img/intro-img.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+    
+    ============================-->
+    <section id="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              <img src="./img/working_images/file_upload.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>Input</h2>
+              <h3>Input all the required files using a form</h3>
+              <p>These includes Rc,Dl,Pancard,Policy,Report,Vehicle Image,Mapping file and Authoritative Data</p>
+              <p>All these files are scanned using google vision api which return all the words present in the files</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- #about -->
+
+
+
+    <!--==========================
+
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+        <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="img/working_images/before.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>Google vision api result (OCR).</h4>
+            <p>
+              All the words present in the files are extracted and are saved in JSON format
+            </p>
+            <p>
+              Now the next step is to convert the unstructured data to meaningful data using mapping file
+            </p>
+          </div>
+        </div>
+
+        <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="img/working_images/data_after_conversion.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4>Structured Output</h4>
+            <p>
+
+              On applying OCR we get a bag of words of the processed document .Since the physical claim files is not in
+              tabular form hence on scanning it is not necessary that our required information will occur sequentially .
+              For eg : To extract DL no. from driver license ,we first generate a bag of all words scanned from DL.Then
+              we search for “DL number” keyword in the bag of words and store all the numbers near this keyword in an
+              array.
+
+            </p>
+            <p>
+              In this way our algorithm will overcome the unstructuredness of physical claim files. Moreover we used
+              javascript functions to accurately find and validate the policy start and end date.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+
+    </section><!-- #intro -->
+
+    </section><!-- #pricing -->
+
+    <!--==========================
+  
+    ============================-->
+    <section class="res" id="faq">
+      <div class="container">
+        <header class="section-header">
+          <h3>Live demo</h3>
+          <p id="value">Please upload Required Data</p>
+          <!-- <p> <input name="media" type="file" id="media">pan</p> -->
+        </header>
+
+        
+
+        <div class="row">
+
+
+          <div class="col-md-6"> <p> <input name="report" type="file" id="report">report</p></div>
+          <div class="col-md-6"> <p> <input name="dl" type="file" id="dl">dl</p></div>
+          <div class="col-md-6"> <p> <input name="vehicle" type="file" id="vehicle">vehicle</p></div>
+          <div class="col-md-6"> <p> <input name="pan" type="file" id="pan">pan</p></div>
+          <div class="col-md-6"> <p> <input name="data" type="file" id="data">data</p></div>
+          <div class="col-md-6"><button onclick="s()" class="btn  btn-success">submit</button></div>
+          
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Extracted Data</h3>
+
+        </header>
+
+        <table id="ed"  class="table">
+
+        
+        </table>
+
+        
+        <header class="section-header">
+            <h3>Given Data</h3>
+  
+          </header>
+  
+          <table id="gd" class="table">
+  
+          
+          </table>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+
+    <div class="container">
+
+      <div class="credits">
+        Developed by <a href="#">Muskan Garg</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <!-- <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script> -->
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+  
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="./js/script.js"></script>
+
+  
+
+</body>
+
+</html>

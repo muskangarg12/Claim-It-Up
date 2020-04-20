@@ -1,0 +1,78 @@
+[
+    {
+      "Number.": 1,
+      "Type": "Sedan"
+    },
+    {
+      "Number.": 2,
+      "Type": "L.M.V"
+    },
+    {
+      "Number.": 3,
+      "Type": "LMV"
+    },
+    {
+      "Number.": 4,
+      "Type": "Car"
+    },
+    {
+      "Number.": 5,
+      "Type": "Saloon"
+    },
+    {
+      "Number.": 6,
+      "Type": "Delta"
+    },
+    {
+      "Number.": 7,
+      "Type": "Hatchback"
+    },
+    {
+      "Number.": 8,
+      "Type": "Crossover"
+    },
+    {
+      "Number.": 9,
+      "Type": "Convertible"
+    },
+    {
+      "Number.": 10,
+      "Type": "Suv"
+    },
+    {
+      "Number.": 11,
+      "Type": "Suvs"
+    },
+    {
+      "Number.": 12,
+      "Type": "S.U.V"
+    },
+    {
+      "Number.": 13,
+      "Type": "Muv"
+    },
+    {
+      "Number.": 14,
+      "Type": "Muvs"
+    },
+    {
+      "Number.": 15,
+      "Type": "M.U.V"
+    },
+    {
+      "Number.": 16,
+      "Type": "Coupe"
+    },
+    {
+      "Number.": 17,
+      "Type": "Mpv"
+    },
+    {
+      "Number.": 18,
+      "Type": "Mvps"
+    },
+    {
+      "Number.": 19,
+      "Type": "M.P.V"
+    }
+   ]

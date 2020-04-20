@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/5.5.0/css/foundation.css">
+    <script src="https://unpkg.com/shubox@0.2.1/dist/shubox.umd.js"></script>
+<!-- <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.min.css">
+<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"></script>
+<script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation/foundation.clearing.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+<style>
+.codepen--center {
+  overflow: hidden;
+}
+
+.dz-progress {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+}
+.dz-upload {
+  border-radius: 3px;
+  height: 5px;
+  background: #bce29e;
+  display: block;
+  clear: both;
+}
+.dz-upload[style="width: 100%;"] {
+  display: none;
+}
+.dz-filename, .dz-size, .dz-success-mark, .dz-error-mark {
+  display: none;
+}
+
+.dz-complete.dz-success .dz-success-mark,
+.dz-complete.dz-error .dz-error-mark {
+  display: block;
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  text-shadow: 1px 1px white;
+}
+
+.dz-error .dz-error-mark {
+  color: red;
+}
+
+.dz-success .dz-success-mark {
+  color: green;
+}
+
+.shubox--form {
+  padding: 3rem;
+  text-align: left;
+}
+
+.shubox--upload-target {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  /* float: left; */
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  border: dashed 3px gray;
+  cursor: pointer;
+}
+.shubox--upload-target:hover {
+  border-color: silver;
+}
+.shubox--upload-target:before {
+  content: "Drag && Drop || Click";
+  font-size: 0.6rem;
+  color: silver;
+  display: block;
+  font-family: courier;
+  margin-top: 0.4rem;
+  line-height: 1rem;
+}
+
+.shubox--upload-preview {
+  overflow: hidden;
+}
+.shubox--upload-preview > div {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+</style>
+<link rel="stylesheet" href="https://shubox-codepen-io.s3.amazonaws.com/codepen.css">
+
+</head>
+
+<body>
+        <div class="shubox--container">
+                <form class="shubox--form codepen--center">
+                  <div class="shubox--upload-target"
+                       id="shubox--upload-target"></div>
+                  
+                  <div class="shubox--upload-preview"
+                       id="shubox--upload-preview"></div>
+                </form>
+              </div> 
+              <script >
+                    // Use an adjacent `previewsContainer` to
+                    // display the photo thumbnails, their upload
+                    // progress, and success or failure state
+                    
+                    uploader = new Shubox("#shubox--upload-target", {
+                      key: "7e1e4069",
+                      transformName: 'multi-upload',
+                      previewsContainer: '#shubox--upload-preview',
+                    //   addedfile: function(){ console.log('added') },
+                    //   success: function(){ console.log('file uploaded') },
+                    //   queuecomplete: function(){ console.log('done') }
+                    })
+                    
+                    </script>
+        
+</body>
+
+</html>
